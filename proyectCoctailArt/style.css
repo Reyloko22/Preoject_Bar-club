@@ -1,0 +1,340 @@
+/* :root {
+    --grey-principal: A7A7A7;
+    --shadow: FF0000;
+    --black-background: 1E1E1E;
+    --dark-grey: 332F2F;
+} */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "DM Sans", sans-serif;
+}
+
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+
+/* ----------------- HEADER ----------------- */
+
+.navBarContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(190, 190, 190);
+
+    place-items: center;
+    width: 100vw;
+    height: 60px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 20px 200px 0 #ff0000;
+
+
+}
+
+.menu {
+    
+    height: 32px;
+    width: 32px;
+    margin: 0px 10px 0 0 ;
+
+}
+
+.logoV2 {
+    
+    height: 52px;
+    margin: 0 0 0 5px;
+    /* width: 120px; */
+        
+}
+
+
+.searchContainer {
+
+    width: 140px;
+    height: 24px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    margin: 0px 12px 0 0 ;
+    
+}
+
+.searchContainer input {
+    width: 100px;
+    height: 18px;
+    border-radius: 100px;
+    margin: 0 14px 0 0;
+    border: none;
+    outline: none;
+}
+
+.searchIcon {
+
+    background-image: url("./assets/search.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0px 6px 0 0 ;
+    width: 16px;
+    height: 16px;
+}
+
+
+
+/* ------------- MAIN ------------ */
+
+
+.coctailCards {
+    position: relative;
+    margin: 120px 0 0 0px;
+    height: 316px;
+    width: 412px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: y proximity;
+}
+
+
+.containerCards {  
+    scroll-snap-align: start;
+    width: 70%;
+    min-width: 250px;
+    max-width: 100px;
+    height: 300px;
+    margin: 50px auto ;
+    padding: 0 15px;
+    background-color: #dfe1e5;
+    border-radius: 15px;
+    
+    
+    
+}
+
+
+
+
+.infoContainer {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.infoContainer img {
+    width: 90%;
+    height: 90%;
+    margin: 13px 10px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px 0 #0a0a0a;
+}
+
+
+.interactionsDetails {
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    top: 460px;
+    left: calc(50% - 102px);
+    padding: 6px;
+    background-color: #dfe1e5;
+    border-radius: 8px;
+    border: 7px solid rgb(56, 56, 56);
+    box-shadow: 0 1px 10px 0 #ff0000;
+   
+}
+
+.interactionContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.imgInteraction1 {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    background-image: url(./assets/add-friend.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imgInteraction2 {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    background-image: url(./assets/like.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imgInteraction3 {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    background-image: url(./assets/share.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.infoInteractionContainer {
+    position: absolute;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+
+    width: 38px;
+    height: 38px;
+    top: 180px;
+    left: 70%;
+    
+    background-color: #dfe1e5;
+    
+    border-radius: 100%;
+   
+}
+
+.imgInformation {
+    width: 37px;
+    height: 37px;
+    margin: auto;
+    background-image: url(./assets/about-1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.optionContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+
+}
+
+.optionContainer p {
+    text-align: center;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+.optionCard {
+    width: 90%;
+    display: flex;
+    min-width: 124px;
+    max-width: 200px;
+    min-height: 80px;
+    margin: 65px auto;
+    background-color:#dfe1e5;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px 0 #ff0000;
+
+}
+
+
+
+.imgOp1 {
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    background-image: url(./assets/cuba-libre.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imgOp2 {
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    background-image: url(./assets/cocktail\(1\).png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imgOp3 {
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    background-image: url(./assets/cocktail.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ------------- FOOTER --------- */
+
+
+
+.footerContainer {
+    display: flex;
+    width: 100vw;
+    background-color: rgb(190, 190, 190);
+    align-items: center;
+    height: 60px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0 20px 200px 0 #ff0000;
+
+
+}
+
+.imgFooter1 {
+    
+    width: 42px;
+    height: 42px;
+    margin: 0 auto;
+    background-image: url(./assets/whatsapp.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.imgFooter2 {
+    
+    width: 42px;
+    height: 42px;
+    margin: 0 auto;
+    background-image: url(./assets/instagram.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.imgFooter3 {
+    
+    width: 42px;
+    height: 42px;
+    margin: 0 auto;
+    background-image: url(./assets/tiktok.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.footerContainer p {
+    text-align: center;
+    margin: auto;
+    font-size: 2rem;
+}
